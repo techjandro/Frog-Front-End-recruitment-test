@@ -1,0 +1,35 @@
+.article {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+
+  color: var(--color-text-primary);
+
+  /* I'm not using any CSS preprocessors here, let's just assume this is fully supported. 🐸  */
+  & > .article__title {
+    font-family: var(--font-family-heading);
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-heading-1);
+    line-height: var(--line-height-base-heading);
+  }
+
+  & > .article__description {
+    max-width: 80%;
+    margin-bottom: var(--spacing-xs);
+
+    font-size: var(--font-size-md);
+  }
+
+  & > .article__footer {
+    display: flex;
+    gap: var(--spacing-xs);
+  }
+}
+
+@media (max-width: 375px) {
+  .article {
+    & > .article__description {
+      max-width: unset;
+    }
+  }
+}

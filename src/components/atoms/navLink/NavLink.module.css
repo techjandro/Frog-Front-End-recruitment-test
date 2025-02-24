@@ -1,0 +1,9 @@
+.navLink {
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-text-primary);
+}
+
+.navLink:hover {
+  color: var(--color-accent);
+}
