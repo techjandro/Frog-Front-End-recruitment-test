@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import "./theme/main.css";
 import Hero from "./components/organisms/hero/Hero";
 
-export type Theme = "theme-one" | "theme-two";
+type Theme = "theme-one" | "theme-two";
 
 function App() {
   const [theme, setTheme] = useState<Theme>("theme-one");
@@ -23,7 +23,7 @@ function App() {
     // Ideally, theme should be passed down to all components that need it
     // but for the sake of simplicity, we're only passing it to the Hero component. 🐸
     <main>
-      <Hero theme={theme} />
+      <Hero />
       <button id="theme-toggle" onClick={toggleTheme}>
         🎨
       </button>

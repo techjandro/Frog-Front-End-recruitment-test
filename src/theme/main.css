@@ -51,6 +51,9 @@
 
   /* Border Radius */
   --border-radius-lg: 1.25rem;
+
+  /* Media */
+  --hero-cover-image: url("../assets/hero-image-mobile.png");
 }
 
 @media (max-width: 375px) {
@@ -73,6 +76,8 @@ not property declarations. 🐸 */
   --font-family-heading: "Quantico", sans-serif;
 
   --border-radius-lg: 0;
+
+  --hero-cover-image: url("../assets/hero-image-rocket.png");
 }
 
 body {

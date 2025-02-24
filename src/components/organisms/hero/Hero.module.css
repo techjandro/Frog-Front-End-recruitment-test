@@ -51,6 +51,11 @@
         align-items: flex-end;
         justify-content: flex-end;
         flex: 1;
+
+        background-image: var(--hero-cover-image);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom right;
       }
     }
   }

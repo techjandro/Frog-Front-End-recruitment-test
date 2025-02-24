@@ -4,16 +4,7 @@ import NavBar from "../../molecules/navbar/NavBar";
 import Article from "../../molecules/article/Article";
 import Button from "../../atoms/button/Button";
 
-import { Theme } from "../../../App";
-
-import heroCoverMobile from "../../../assets/hero-image-mobile.png";
-import heroCoverRocket from "../../../assets/hero-image-rocket.png";
-
-interface HeroProps {
-  theme: Theme;
-}
-
-export default function Hero({ theme }: HeroProps) {
+export default function Hero() {
   return (
     <div className={styles.hero}>
       <div className={styles.hero__container}>
@@ -38,14 +29,7 @@ export default function Hero({ theme }: HeroProps) {
               }
             />
           </div>
-          <div className={styles.hero__cover}>
-            {theme === "theme-one" && (
-              <img src={heroCoverMobile} alt="Hero cover" />
-            )}
-            {theme === "theme-two" && (
-              <img src={heroCoverRocket} alt="Hero cover" />
-            )}
-          </div>
+          <div className={styles.hero__cover} aria-hidden="true" />
         </section>
       </div>
     </div>
