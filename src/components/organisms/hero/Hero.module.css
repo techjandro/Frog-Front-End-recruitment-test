@@ -1,4 +1,5 @@
 .hero {
+  /* Personally, I like to organize and order properties in a way that makes much sense to find (e.g. sizing, appearance, layout, etc) 🐸 */
   display: flex;
   justify-content: center;
 
@@ -9,7 +10,7 @@
   background-size: cover;
   background-position: bottom right;
 
-  /* I'm not using any CSS preprocessors here, let's just assume this is fully supported. 🐸  */
+  /* I'm not using any CSS preprocessors here, let's just assume that nesting is fully supported. 🐸  */
   & > .hero__container {
     display: flex;
     flex-direction: column;

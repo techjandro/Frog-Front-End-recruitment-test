@@ -3,6 +3,7 @@
   justify-content: space-between;
   align-items: center;
 
+  /* I'm not using any CSS preprocessors here, let's just assume that nesting is fully supported. 🐸  */
   & > .navbar__links {
     display: flex;
     justify-content: space-between;
@@ -12,7 +13,7 @@
 }
 
 @media (max-width: 375px) {
-  .navbar > .navbar__links > *:not(:last-child) {
+  .navbar > .navbar__links > li:not(:last-child) {
     display: none;
   }
 }

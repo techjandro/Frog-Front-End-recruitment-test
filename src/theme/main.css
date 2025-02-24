@@ -1,8 +1,10 @@
 @import url("./reset.css");
 
 :root {
-  /* Default theme (theme-one)  */
-  /* Here, I decided to declare all default tokens that may serve as fallback for non-existing themes, this can be improved. 🐸 */
+  /* Here, I decided to provide a default theme for the document, it could be improved by just leveraging these values as a fallback
+  but for now, I'll let it this way. 🐸 */
+
+  /* Theme One (default) */
 
   /* Colors */
   --color-primary: #7000d4;
@@ -58,7 +60,7 @@
   }
 }
 
-/* For demo purposes, I'm creating a theme attribute for the document,
+/* For demo purposes, I'm creating a second theme attribute for the document,
 that way we can switch between variables. The main purpose is to keep this limited only to variables/tokens overwrite,
 not property declarations. 🐸 */
 [data-theme="theme-two"] {

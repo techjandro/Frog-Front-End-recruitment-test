@@ -16,7 +16,7 @@ export default function Button({
 }: ButtonProps) {
   return (
     <button
-      // Using CVA may be a good idea to compose classes and generate component variants,
+      // Using CVA (or similar) may be a good idea to compose classes and generate component variants,
       // but it's not necessary for now. 🐸
       className={`${styles.button} ${styles[`button--${variant}`]}`}
       {...props}

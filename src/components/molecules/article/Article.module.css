@@ -5,7 +5,7 @@
 
   color: var(--color-text-primary);
 
-  /* I'm not using any CSS preprocessors here, let's just assume this is fully supported. 🐸  */
+  /* I'm not using any CSS preprocessors here, let's just assume that nesting is fully supported. 🐸  */
   & > .article__title {
     font-family: var(--font-family-heading);
     font-weight: var(--font-weight-regular);
@@ -27,9 +27,7 @@
 }
 
 @media (max-width: 375px) {
-  .article {
-    & > .article__description {
-      max-width: unset;
-    }
+  .article > .article__description {
+    max-width: unset;
   }
 }
